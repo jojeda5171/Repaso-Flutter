@@ -61,6 +61,7 @@ class _CounterFunctionsScreenState extends State<CounterFunctionsScreen> {
               icon: Icons.exposure_minus_1_outlined,
               onPressed: () {
                 setState(() {
+                  if (clickCounter == 0) return;
                   clickCounter--;
                 });
               },
